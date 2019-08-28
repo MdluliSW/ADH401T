@@ -1,0 +1,11 @@
+mysql -u root
+DROP DATABASE validClient;
+CREATE DATABASE validClient;
+use validClient;
+
+CREATE TABLE users(
+username VARCHAR (25) NOT NULL UNIQUE,
+password VARCHAR (15) NOT NULL,
+PRIMARY KEY (username)
+)
+ENGINE=INNODB;
